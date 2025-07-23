@@ -43,7 +43,7 @@ CREATE TABLE `inventario_leitores` (
 
 🧠 Funcionamento
 
-    O script inventario_leitores_1.0.0.py:
+    O script inventario_leitores.py:
 
         Conecta-se ao banco de origem (flex4.node) para obter os hosts ativos.
 
@@ -236,5 +236,8 @@ chmod 600 /opt/flex/inventario_leitores_conectcar/db_config.json.enc
 Você pode executar o script manualmente para testar:
 
 python3 /opt/flex/inventario_leitores_conectcar/inventario_leitores.py
+
+Obs: Para melhor controle de versões, com alterações mínimas, será utilizado link simbólico apontando a versão para inventario_leitores.py
+Ex: inventario_leitores.py -> inventario_leitores_1.0.1.py
 
 Para dúvidas ou manutenção, consulte o responsável técnico do projeto ou revise os logs de erro.
